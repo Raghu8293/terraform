@@ -5,9 +5,9 @@ version="5.89.0"
 }
 }
 }
-provider "aws" {
+/*provider "aws" {
   region = var.region
-}
+}*/
 
 resource "aws_instance" "app" {
     ami=var.ami #"ami-08b5b3a93ed654d19"
