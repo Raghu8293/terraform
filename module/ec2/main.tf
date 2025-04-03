@@ -6,7 +6,7 @@ version="5.89.0"
 }
 }
 /*provider "aws" {
-  region = var.region
+#  region = var.region
 }*/
 
 resource "aws_instance" "app" {
