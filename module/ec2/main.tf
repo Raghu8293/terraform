@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 resource "aws_instance" "app" {
-    ami="ami-08b5b3a93ed654d19"
-    instance_type = "t2.micro"
+    ami=var.ami #"ami-08b5b3a93ed654d19"
+    instance_type = var.instance_type #"t2.micro"
   
  }
