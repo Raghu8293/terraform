@@ -1,3 +1,10 @@
+terraform{
+required_providers{
+aws={
+version="5.89.0"
+}
+}
+}
 provider "aws" {
   region = var.region
 }
